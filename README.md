@@ -1,6 +1,6 @@
 # NWRS-story-map
 
-This interactive story map highlights several conservation projects that fall under the Southeast Conservation Adaptation Strategy (SECAS).  This project is under active development.
+This interactive story map highlights several Refuges down I-95 -- the code is adapted from a different USFWS project highlighting conservation projects.  This project is under active development.
 
 ## Development
 
