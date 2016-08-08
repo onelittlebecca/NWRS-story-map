@@ -74,15 +74,15 @@
 //           case 'Achieving Conservation':
 //             return L.marker(latlng, { icon: icons.purple });
 //         }
-      }
+//       }
     }).addTo(map);
 
     map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
   }
 
-  function saveGeographies(geog) {
-    geographies = geog;
-  }
+//   function saveGeographies(geog) {
+//     geographies = geog;
+//   }
 
   function onMarkerClick(e) {
     emitter.emit('project:click', e.target.feature);
