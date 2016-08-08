@@ -24,16 +24,8 @@
     options.checkbox = document.querySelector('.dont-show-again');
     if ( store.get('disableSplashScreen') ) close();
     registerHandlers();
-    randomImage();
   }
 
-  function randomImage() {
-    var img = _.random(backgrounds);
-    var imgRoot = 'http://usfws.github.io/secas-story-map/images/splash-photos/';
-    var splash = document.querySelector('.splash-screen.active');
-    splash.style.backgroundImage = 'url(' + imgRoot + img.src + ')';
-    emitter.emit('splash:background', img);
-  }
 
   function setLocalStorage() {
     if (options.checkbox.checked) store.set('disableSplashScreen', true);
