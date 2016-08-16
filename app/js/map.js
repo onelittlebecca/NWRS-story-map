@@ -62,18 +62,60 @@
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
       },
+<<<<<<< HEAD
+=======
+//       pointToLayer: function (feature, latlng) {
+//         var props = feature.properties;
+//         switch(props.theme) {
+//           case 'Smart Planning':
+//             return L.marker(latlng, { icon: icons.orange });
+//           case 'Building on Existing Partnerships':
+//             return L.marker(latlng, { icon: icons.blue });
+//           case 'Saving Dollars and Improving Efficiencies':
+//             return L.marker(latlng, { icon: icons.green });
+//           case 'Achieving Conservation':
+//             return L.marker(latlng, { icon: icons.purple });
+//         }
+//       }
+>>>>>>> origin/master
     }).addTo(map);
 
     map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
   }
 
+<<<<<<< HEAD
 
+=======
+//   function saveGeographies(geog) {
+//     geographies = geog;
+//   }
+>>>>>>> origin/master
 
   function onMarkerClick(e) {
     emitter.emit('project:click', e.target.feature);
   }
 
+<<<<<<< HEAD
 
+=======
+//   function displayGeography(office) {
+//     var clientWidth = document.documentElement.clientWidth;
+//     geogLayer.clearLayers();
+//     var currentGeog = L.geoJson(geographies, {
+//       filter: function (feature) {
+//         return feature.properties.name === office.properties.geography;
+//       }
+//     });
+//     geogLayer.addLayer(currentGeog);
+// 
+//     // Decide if we should make room on the map for the infowindow
+//     if (clientWidth > 1000)
+//       map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0]});
+//     else
+//       map.fitBounds(currentGeog.getBounds());
+//     emitter.emit('gallery:close');
+//   }
+>>>>>>> origin/master
 
   function zoomToFullExtent() {
     map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
